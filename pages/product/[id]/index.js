@@ -1,20 +1,23 @@
+import Meta from "../../../components/Meta";
 import styles from "../../../styles/Product.module.css";
 const index = ({ product }) => {
-  console.log(product);
-
   return (
-    <div className={styles.product}>
-      <div className={styles.productImg}>
-        <img src={product.image} />
+    <>
+      <Meta />
+      ``
+      <div className={styles.product}>
+        <div className={styles.productImg}>
+          <img src={product.image} />
+        </div>
+        <div className={styles.productDetails}>
+          <div className={styles.productTitle}>{product.title}</div>
+          <div className={styles.productDes}>{product.description}</div>
+          <div>Rate count : {product.rating.count}</div>
+          <div>Rate : {product.rating.rate}</div>
+          <div>Price : ${product.price.toFixed(2)}</div>
+        </div>
       </div>
-      <div className={styles.productDetails}>
-        <div className={styles.productTitle}>{product.title}</div>
-        <div className={styles.productDes}>{product.description}</div>
-        <div>Rate count : {product.rating.count}</div>
-        <div>Rate : {product.rating.rate}</div>
-        <div>Price : ${product.price.toFixed(2)}</div>
-      </div>
-    </div>
+    </>
   );
 };
 
