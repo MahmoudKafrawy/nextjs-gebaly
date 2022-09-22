@@ -8,7 +8,7 @@
     overflow-x: scroll;
 }
 .itemImg{
-    object-fit: contain;
+    object-fit: contain !important;
 }
 .itemTitle{
     font-size: 14px;

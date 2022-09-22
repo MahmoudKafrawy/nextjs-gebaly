@@ -15,7 +15,7 @@ const CategoryItem = ({ product }) => {
   const state = useContext(CartContext);
   return (
     <div>
-      <Card sx={{ width: 240, height: 370 }} style={{ margin: 10 }} className={styles.card}>
+      <Card sx={{ width: 240, height: 380 }} style={{ margin: 10 }} className={styles.card}>
         <Link href={`/product/${product.id}`} key={product.id}>
           <a>
             <CardMedia
