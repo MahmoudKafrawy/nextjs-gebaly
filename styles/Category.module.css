@@ -1,0 +1,21 @@
+.title{
+    margin-left: 15px;
+    color: #ff5900;
+}
+.category{
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+}
+.itemImg{
+    object-fit: contain;
+}
+.itemTitle{
+    font-size: 14px;
+    font-weight: bold;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+justify-content: space-between;
+}

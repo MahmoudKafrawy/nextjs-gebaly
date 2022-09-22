@@ -1,0 +1,16 @@
+.product{
+    display: flex;
+}
+.productImg img{
+    width: 20vw;
+}
+.productDetails{
+    margin-left: 20px;
+}
+.productTitle{
+    font-weight: bold;
+    font-size: 20px;
+}
+.productDes{
+    margin: 20px 0px;
+}

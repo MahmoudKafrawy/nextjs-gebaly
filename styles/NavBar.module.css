@@ -1,0 +1,38 @@
+.nav{
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px  solid black;
+    margin-bottom: 30px;
+}
+
+.navLinks a{
+    margin: 0 10px;
+    vertical-align: bottom;
+
+}
+.navLinks a:hover{
+    margin: 0 10px;
+    color: #ff5900;
+}
+.navSearch{
+    border: 1px solid #ff5900;
+    border-radius: 3px;
+    height: 30px;
+    width: 200px;
+}
+@media (max-width:590px) {
+    .nav{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .navLinks {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
